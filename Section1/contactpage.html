@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get in touch</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family:"Outfit";
+            background: linear-gradient(#f2cfca,#fff7f9);
+        }
+        .contact-container{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .contact-left{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            gap: 20px;
+        }
+        .contact-left-title h2{
+            font-weight: 600;
+            color: #975093;
+            font-size: 40px;
+            margin-bottom: 5px;
+        }
+        .contact-left title hr{
+            border: none;
+            width: 120px;
+            height: 5px;
+            background-color: #b455c1;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .contact-input-required{
+            width: 400px;
+            height: 50px;
+            border: none;
+            outline: none;
+            padding-left: 25px;
+            font-weight: 500;
+            border-radius: 50px;
+        }
+        .contact-left textarea{
+            height: 140px;
+            padding-top: 15px;
+            border-radius: 20px;
+        }
+        .btn{
+            background-color: #ae8e8e;
+        }
+        .contact-input :focus{
+            border: 2px solid #ff994f;
+        }
+        .contact-input ::placeholder{
+            color: #664343;
+        }
+        
+        .contact-left button{
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            font-size: 16px;
+            color: #fffafa;
+            gap: 10px;
+            background: linear-gradient(270 deg,#ff994f,#e11a42);
+            cursor: pointer;
+            border: none;
+            border-radius: 50px;
+        }
+       
+        
+    </style>
+</head>
+<body>
+   <div class="contact-container">
+    <form action="" class="contact-left">
+        <div class="contact-left-title">
+            <h2>Get in touch</h2>
+            <hr>
+        </div>
+        <input type="text" name="Name" placeholder="Your Name" class="contact-input-required">
+        <input type="email" name="Email" placeholder="Your Email" class="contact-input-required">
+        <textarea name="message" placeholder="Your Message" class="contact-input-required"></textarea>
+        <button class="btn" type="submit">Submit </button>
+    </form>
+    <div class="contact-right">
+        <img src="https://i.pinimg.com/564x/a4/c5/2e/a4c52ee6369ea47ea3c16a0a0b235ab9.jpg" alt="">
+    </div>
+    
+   
+</body>
+</html>

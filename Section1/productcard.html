@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+<style>
+*{
+    font-family: 'Nunito',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+    text-transform: capitalize;
+}
+html{
+ font-size: 62.5%;
+ overflow-x: hidden;
+}
+body{
+    background: #eee;
+}
+.container{
+    max-width: 1200px;
+    margin:  0 auto;
+    padding: 3rem 2rem;
+}
+.container .title{
+    font-size: 3.4rem;
+    color: #444;
+    margin-bottom: 3 rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.container .product-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(30rem , 1fr));
+    gap: 2rem;
+}
+.container .product-container .product{
+    text-align: center;
+    padding: 3rem 2rem;
+    background: #fff;
+    box-shadow: 0,5rem 1rem rgba(0,0,0,.1);
+    outline: 1rem solid#ccc;
+    outline-offset: -1.5rem;
+    cursor: pointer;
+}
+.container .product-container .product .img{
+    height: 25rem;
+}
+
+</style>
+</head>
+<body>
+<div class="container">
+    <h3 class="title">Organic Products</h3>
+        <div class="Product" data-name="p-1">
+            <img src="https://i.pinimg.com/564x/0c/0d/d1/0c0dd1e3552ce84f156b3cc132ed767d.jpg" alt="">
+            <h3>Strawberries</h3>
+            <div class="price">$2.00
+            </div>
+        </div>
+        <div class="Product" data-name="p-2">
+            <img src="https://i.pinimg.com/564x/7d/bb/a3/7dbba363b29f091352fec94ee9cc40ad.jpg" alt="">
+            <h3>Onion</h3>
+            <div class="price">$2.00
+            </div>
+        </div>
+        <div class="Product" data-name="p-3">
+            <img src="https://i.pinimg.com/564x/eb/53/d0/eb53d07a61dcba25bce6508715d0c4c5.jpg" alt="">
+            <h3>Tomato</h3>
+            <div class="price">$2.00
+            </div>
+        </div>
+        <div class="Product" data-name="p-4">
+            <img src="https://i.pinimg.com/564x/8c/0c/51/8c0c51069f6d1bf13884656b9ccca450.jpg" alt="">
+            <h3>Brinjal</h3>
+            <div class="price">$2.00
+            </div>
+        </div>
+        <div class="Product" data-name="p-5">
+            <img src="https://i.pinimg.com/564x/2d/0e/9b/2d0e9bb30ec7994e952511619f6dd569.jpg" alt="">
+            <h3>Broccali</h3>
+            <div class="price">$2.00
+            </div>
+        </div>
+
+    </form>
+
+</div>
+</body>
+</html>
