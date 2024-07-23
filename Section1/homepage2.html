@@ -1,19 +1,19 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home Page</title>
-    <link rel="stylesheet"
-     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <style>
-:root{
-    --pink:#c84393;
-}
+    :root {
+        --pink: #c84393;
+    }
 
-.body{
+    .body {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
@@ -24,122 +24,144 @@
         text-transform: capitalize;
         transition: .2s linear;
     }
-    html{
+
+    html {
         font-size: 62.5%;
         scroll-behavior: smooth;
         scroll-padding-top: 6rem;
         overflow-x: hidden;
     }
-    section{
+
+    section {
         padding: 2rem 9%;
     }
-    .heading{
+
+    .heading {
         text-align: center;
         font-size: 4rem;
         color: #333;
         padding: 1rem;
-        margin:2rem 0;
+        margin: 2rem 0;
         background: rgba(255, 51, 153, .05);
     }
-    .heading span{
+
+    .heading span {
         color: var(--pink);
     }
-    .btn{
+
+    .btn {
         display: inline-block;
         margin-top: 1rem;
         border-radius: 5rem;
-        background:black;
-        color:#eee;
+        background: black;
+        color: #eee;
         padding: .9rem 3.5rem;
         cursor: pointer;
         font-size: 1.7rem;
         text-decoration: none;
-        
+
 
     }
-    .btn :hover{
+
+    .btn :hover {
         background: var(--pink);
     }
-    header{
+
+    header {
         position: fixed;
-        top: 0; left: 0; right: 0;
+        top: 0;
+        left: 0;
+        right: 0;
         background: #fff;
         padding: 2rem 9%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         z-index: 1000;
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
         text-decoration: none;
     }
-    header .logo{
+
+    header .logo {
         font-size: 3rem;
         color: #333;
         font-weight: bolder;
     }
-    header .logo span{
+
+    header .logo span {
         color: var(--pink);
     }
-    header .navbar a{
-     font-size: 2rem;
-     padding: 0 1.5rem;
-     color: #666;
-    } 
-    header .navbar a:hover{
+
+    header .navbar a {
+        font-size: 2rem;
+        padding: 0 1.5rem;
+        color: #666;
+    }
+
+    header .navbar a:hover {
         color: var(--pink);
     }
-    header .icons a{
+
+    header .icons a {
         font-size: 2.5rem;
         color: #333;
         margin-left: 1.5rem;
         text-decoration: none;
     }
-    header .icons a:hover{
+
+    header .icons a:hover {
         color: var(--pink);
     }
-    header #toggler{
+
+    header #toggler {
         display: none;
     }
-    header .fa-bars{
+
+    header .fa-bars {
         font-size: 3rem;
         color: black;
         border: .5rem;
         padding: .5rem 1.5rem;
         cursor: pointer;
-        border: .1rem solid rgba(0,0,0,.3);
+        border: .1rem solid rgba(0, 0, 0, .3);
         display: none;
     }
-       .home{
+
+    .home {
         display: flex;
-        align-items: center; 
+        align-items: center;
         min-height: 100vh;
-        background:url(https://png.pngtree.com/thumb_back/fw800/background/20240403/pngtree-baking-ingredients-flour-eggs-milk-bakeware-on-white-wooden-background-with-image_15647879.jpg) no-repeat ;
+        background: url(https://png.pngtree.com/thumb_back/fw800/background/20240403/pngtree-baking-ingredients-flour-eggs-milk-bakeware-on-white-wooden-background-with-image_15647879.jpg) no-repeat;
         background-size: cover;
         background-position: center;
-       }
-.home .content{
-    max-width: 50rem;
-}
+    }
 
-.home .content h3{
-    font-size: 6rem;
-    color: #333;
-    padding: 10px;
-    margin-top: 50px;
-    gap: 10px;
-}
-.home .content span{
-    font-size: 3.5rem;
-    color: var(--pink);
-    padding: 10px;
-    line-height: 1px;
-}
-.home .content p{
-    font-size: 1.5rem;
-    color: rgb(23, 22, 22);
-    padding: 10px;
-    line-height: 1.5px;
-}
+    .home .content {
+        max-width: 50rem;
+    }
+
+    .home .content h3 {
+        font-size: 6rem;
+        color: #333;
+        padding: 10px;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .home .content span {
+        font-size: 3.5rem;
+        color: var(--pink);
+        padding: 10px;
+        line-height: 1px;
+    }
+
+    .home .content p {
+        font-size: 1.5rem;
+        color: rgb(23, 22, 22);
+        padding: 10px;
+        line-height: 1.5px;
+    }
+
     /* .about .row{
     display: flex;  
     align-items: center;
@@ -148,46 +170,44 @@
     padding: 2rem 0;
     padding-bottom: 3rem;
     } */
-.about{
-    height: 800px;
-    width: 100%;
-}
- .image-container{
-    height: 300px;
-    width: 100%;
-    /* flex: 1 1 40rem; */
-    /* padding: relative; */
-    /* align-items: center; */
-    /* flex-wrap: wrap; */
-    padding: 2rem 0;
-    /* padding-bottom: 3rem; */
- 
-}
-.image-container img{
-    width: 100%;
-    border: 1.2 rem solid #fff;
-    border-radius: .5rem;
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
-    height: 500px;
-    object-fit: cover;
-}  
+    .about {
+        /* height: 1000px; */
+        /* width: 100%; */
+        background-color: #fff;
+    } 
 
-.image-container h3{
-top: 50%; transform:translateY(-50%) ;
-font-size: 3rem;
-width: 100%;
-background: #fff;
-line-height: 10px;
-/* padding: 1rem 2rem; */
-/* text-align: center; */
-mix-blend-mode: screen;
-/* bottom: 0; */
-}
-.image-container p{
-    font-size: 13px;
-}
+    .image-container {
+        /* flex: 1 1 40rem; */
+        /* padding: relative; */
+        /* align-items: center; */
+        /* flex-wrap: wrap; */
+        /* padding: 2rem; */
+        /* padding-bottom: 3rem; */
+        /* background-color: blue; */
+        background: url('https://www.bhg.com/thmb/iL-5Q6gGjmXkxCKqEovughTLQAo=/3000x0/filters:no_upscale():strip_icc()/how-to-bake-how-to-make-cupcakes-hero-01-12c03f3eff374d569b0565bff7d9e597.jpg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
 
-/* .about .row .content{
+    /* .image-container img {
+        width: 100%;
+        border: 1.2 rem solid #fff;
+        border-radius: .5rem;
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+        height: 500px;
+        object-fit: cover;
+    } */
+
+    .image-body h3 {
+        font-size: 30px;
+    }
+
+    .image-container p {
+        font-size: 13px;
+    }
+
+    /* .about .row .content{
     flex: 1 1 40rem; 
 }
 
@@ -200,71 +220,78 @@ mix-blend-mode: screen;
 
 } */
 
-
-
-
-    @media(max-width:991px) {
-     html{
-        font-size: 55%;   
-     }  
-     
-     header{
-        padding: 2rem;
-     }
-     section{
-        padding: 2rem;
-     }
-     .home{
-        background-position: left;
-     }
-    }
-
-    @media(max-width:768px){
-        html.fa-bars{
-            display: block;
-        }
-        
-     header .navbar{
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: #eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-     }
-     header #toggler:checked ~ .navbar{
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-     }
-     
-     header .navbar a{
-        margin: 1.5rem;
-        padding: 1.5rem;
-        background: #fff;
-        border: .1rem solid rgba(0,0,0,.1);
-        display: block;
-     }   
-     .home .content h3{
-        font-size: 5rem; 
-     }
-.home .content span{
-    font-size: 2.5rem;
+.image-body{
+    /* background-color: blue;    */
+    width: 300px;
 }
 
 
 
+    @media(max-width:991px) {
+        html {
+            font-size: 55%;
+        }
 
-     @media(max-width:450px) {
-     html{
-        font-size: 50%;   
-     }  
-    }
-    .heading{
-        font-size: 3rem;
-    }
+        header {
+            padding: 2rem;
+        }
+
+        section {
+            padding: 2rem;
+        }
+
+        .home {
+            background-position: left;
+        }
     }
 
+    @media(max-width:768px) {
+        html.fa-bars {
+            display: block;
+        }
+
+        header .navbar {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            background: #eee;
+            border-top: .1rem solid rgba(0, 0, 0, .1);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        }
+
+        header #toggler:checked~.navbar {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        }
+
+        header .navbar a {
+            margin: 1.5rem;
+            padding: 1.5rem;
+            background: #fff;
+            border: .1rem solid rgba(0, 0, 0, .1);
+            display: block;
+        }
+
+        .home .content h3 {
+            font-size: 5rem;
+        }
+
+        .home .content span {
+            font-size: 2.5rem;
+        }
+
+        @media(max-width:450px) {
+            html {
+                font-size: 50%;
+            }
+        }
+
+        .heading {
+            font-size: 3rem;
+        }
+    }
 </style>
+
 <body>
     <header>
         <input type="checkbox" name="" id="toggler">
@@ -284,31 +311,36 @@ mix-blend-mode: screen;
         </div>
     </header>
 
-<section class="home" id="home">
+    <section class="home" id="home">
 
-    <div class="content">
-        <h3>Fresh cakes</h3>
-        <span>Homemade cakes</span>
-        <p>We serve best homemade cake in town!</p> 
-         <a href="#" class="btn">Shop more</a>
-    </div>
-</section>
-<section class="about" id="about">
-    <h1 class="heading"> <span>About</span> us</h1>
+        <div class="content">
+            <h3>Fresh cakes</h3>
+            <span>Homemade cakes</span>
+            <p>We serve best homemade cake in town!</p>
+            <a href="#" class="btn">Shop more</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <h1 class="heading"> <span>About</span> us</h1>
 
-    <div class="image-container">
-       <img src="https://static.vecteezy.com/system/resources/previews/007/119/645/original/cute-funny-cake-character-with-speech-bubble-hand-drawn-cartoon-kawaii-character-illustration-icon-isolated-on-white-background-cupcake-character-concept-vector.jpg" alt="">
-       <h3>Best Cakes</h3>
-       <h3>Why choose us!</h3>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    Nobis dolorem molestias necessitatibus provident error modi expedita perspiciatis magnam impedit praesentium, 
-    soluta corrupti nisi porro neque placeat natus odit laboriosam eius.</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam praesentium alias distinctio pariatur repellendus eveniet.</p>
-    <a href="#" class="btn">learn more</a>
-       
-</div>
-</section >
+        <div class="image-container">
+            <!-- <img src="https://static.vecteezy.com/system/resources/previews/007/119/645/original/cute-funny-cake-character-with-speech-bubble-hand-drawn-cartoon-kawaii-character-illustration-icon-isolated-on-white-background-cupcake-character-concept-vector.jpg" alt=""> -->
+            <div class="image-body">
+                <h3>Best Cakes</h3>
+                <h3>Why choose us!</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Nobis dolorem molestias necessitatibus provident error modi expedita perspiciatis magnam impedit
+                    praesentium,
+                    soluta corrupti nisi porro neque placeat natus odit laboriosam eius.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam praesentium alias distinctio
+                    pariatur
+                    repellendus eveniet.</p>
+                <a href="#" class="btn">learn more</a>
+            </div>
+        </div>
+    </section>
 
 
 </body>
+
 </html>
