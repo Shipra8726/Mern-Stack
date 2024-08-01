@@ -1,9 +1,9 @@
-import React, { Children } from 'react'
+import React from 'react'
 
-const Button = () => {
+const Button = ({children}) => {
   return (
     <button 
-     className='border border-black bg-grey-700 text-black rounded px-4 py-2'>
+     className='border border-black bg-grey-700 text-white rounded px-4 py-2'>
         {children}
     </button>
   )
