@@ -1,67 +1,82 @@
-'use client';
-import React,{useState} from 'react'
+'use client'
+import React, { useState } from 'react'
 
 const TodoList = () => {
-  const[ count, setCount ]=useState(0);
+    const [count, setcount] = useState(0);
 
-  const [taskList, settaskList] = useState([ 
-    { text : 'Ghar ki safai', completed : false, added: new Date()},
-    { text : 'Pdhai', completed : false, added: new Date()},
-    { text : 'Sona', completed : false, added: new Date()},
-    { text : 'Khana', completed : false, added: new Date()},
-    { text : 'Ghar ki safai', completed : false, added: new Date()},
-    { text : 'Pdhai', completed : false, added: new Date()},
-    { text : 'Sona', completed : false, added: new Date()},
-    { text : 'Khana', completed : false, added: new Date()},
-  ]);
-  
+    const [taskList, settaskList] = useState([
+        {text:'ghar ki safai', completed:false, added:new Date()},
+        {text:'padhai', completed:false, added:new Date()},
+        {text:'sona', completed:false, added:new Date()},
+        {text:'khana', completed:false, added:new Date()},
+        {text:'ghoomna', completed:false, added:new Date()},
+        {text:'sona', completed:false, added:new Date()},
+        {text:'khana', completed:false, added:new Date()},
+    ]);
+    
+    const addTask = (e) => {
+        if(e.code === 'Enter'){
+            console.log(e.target.value);
 
-const addTask = (e) => {
-    console.log(e.code);
-
-
-    if(e.code === 'Enter'){
-        console.log(e.target.value);
-        e,target.value = '';
+            const newTask = {
+                text:e.target.value,
+                completed:false,
+                added:new Date(),
+            }
+            settaskList([...taskList, newTask]);   //...taskList is used to copy the previous taskList element and then add the new task
+            e.target.value ='';
+        }
     }
-}
+    const deleteTask = (index) => {
+      console.log(index);
 
+      const temp = taskList;
+      temp.splice(index, 1);
+      settaskList([...temp]);  // update the taskList with the new array without changing the reference to the original array.  // React will automatically re-render the component with the updated taskList...
+    }
+    const toggleCompleted =(index) => {
+      const temp = taskList; 
+      temp[index].completed =!temp[index].completed;
+      settaskList([...temp]);  // update the taskList with the new array without changing the reference to the original array.  // React will automatically re-render the component with the updated taskList...
+    }
+      
 
   return (
     <div className='max-w-5xl mx-auto mt-6'>
-<div className='border shadow rounded-3xl'>
-    <div className='p-4 border-b-2'>
-        <input
-        onKeyDown={addTask}
-        placeholder='Add a new task'
-        type="text"
-          className='w-full px-3  bg-gray-300 rounded-xl outline-none'/>
+      <div className="border shadow rounded-xl">
+       <div className='p-4 border-b-2'>
+         <input onKeyDown={addTask} type='text' placeholder='Add a new task...' className='w-full px-3 py-1 border bg-gray  rounded-xl outline-none ' />
+       </div>
+       <div className='p-6'>
+        {/* <h1 className='text-3xl text-red-500 '>{count}</h1>
+        <button className='bg-gray-300 p-4' onClick={()=>{setcount(count+1); console.log(count);}}>Add</button> */}
+         {
+            taskList.map((task , index)=>{
+                return (
+                 <div key={index} className='rounded-md  border mb-5  bg-gray-100 shadpw p-4'>
+                  {
+                    task.completed ? 
+                    (<p className='bg-green-500 w-fit text-white text-sm px-2 py-1 rounded-full'>Completed</p>) : 
+                    (<p className='bg-yellow-500 text-white px-2 py-1 w-fit rounded-full '>pending</p>)
 
-    </div>
-<div className='p-6'>
-{/* <h1 className='text-3xl text-red-500'>{count}</h1>
-<button className='bg-gray-300 p-4'
-onClick={() => {setCount(count+1); console.log(count);}}
->Add Count</button> */}
-{
-taskList.map(( task, index) => { return (
-<div key={index} className='rounded-md border mb-5 shadow p-4-bg-gray-100'>
-    <p>{task.text}</p>
-    <div className='mt-2 flex justify-end gap-4'>
-        <button className='bg-blue-500 text-white px-3 py-1 rounded-full'>Complete</button>
-        <button className='bg-red-500 text-white px-3 py-1 rounded-full'>Delete</button>
-    </div>
-</div>
-
-)})
-
-}
-</div>
-
-
-</div>
+                  }
+                     <p>{task.text}</p>
+                     <div className='flex justify-end gap-4 mt-2'>
+                        <button onClick={()=> {toggleCompleted(index)}}  className='bg-blue-500 px-3 py-1 rounded-full text-white'>
+                          {
+                            task.completed? 'Mark as Pending' : 'Mark as Complete'
+                          }
+                        </button>
+                        <button onClick={()=> {deleteTask(index)}} className='bg-red-500 px-3 py-1 rounded-full text-white' >Delete</button>
+                     </div>
+                 </div> 
+                )
+            })
+         }
+       </div>
+      </div>
     </div>
   )
 }
 
-export default TodoList;
+export default TodoList
