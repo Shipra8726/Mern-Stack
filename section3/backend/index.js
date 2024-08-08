@@ -30,4 +30,3 @@ app.get('/update', (req , res) =>{
 });
 app.listen( port, () => {console.log( 'server started')});
 
-//productrouter
