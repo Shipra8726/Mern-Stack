@@ -8,8 +8,10 @@ const app = express();
 const port = 5000;
 
 //middleware
+app.use(express.json());
 app.use('/user', UserRouter);
 app.use('/product', Productrouter);
+
 
 
 //route or endpoint
