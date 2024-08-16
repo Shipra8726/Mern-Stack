@@ -27,7 +27,7 @@ router.get('/get all', ( req, res) =>{
 });
 
 router.get('/getbyemail/:email',(req, res) =>{
-    Model.find({email: req.params.email})
+    Model.findOne({email: req.params.email})
     .then((result) => {
         res.status(200).json(result);
     }).catch((err) => {
@@ -35,6 +35,46 @@ router.get('/getbyemail/:email',(req, res) =>{
         res.status(500).json(err);
     });
 });
+
+//getbycity
+router.get('/getbycity/:city',(req, res) =>{
+    Model.find({city: req.params.city})
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+});
+//: denote URL parameter
+router.get('./getbyid/:id',(req,res) =>{
+    Model.findbyid(req.params.id)
+    .then((result) => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+    });
+
+});
+
+router.delete('./delete/:id',(req,res) => {
+    Model.findByIdAndDelete(req.params.id)
+    .then((result)   => {
+        res.status(200).json(result);
+    }).catch((err) => {
+        console.log(err);
+        res.status(500).json(err);
+        
+        
+    });
+})
+
+
+
+
+
+
 //delete
 router.get('/delete', ( req, res) =>{
     res.send('Delete the response');

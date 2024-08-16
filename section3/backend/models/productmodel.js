@@ -5,7 +5,8 @@ const mySchema = new Schema({
     brand : {type : String},
     model: {type: String},
     price : { type : Number},
-    image : String,    CreatedAt: {type: DataTransfer,default: DataTransfer.now}
+    image : String,   
+   CreatedAt: {type: DataTransfer,default: DataTransfer.now}
 });
 
 module.exports = model('users', mySchema);
