@@ -1,5 +1,6 @@
 const express = require('express');
 const Model = require('../models/usermodel');
+const { model } = require('mongoose');
 
 const router = express.Router();
 //add
@@ -64,25 +65,34 @@ router.delete('./delete/:id',(req,res) => {
         res.status(200).json(result);
     }).catch((err) => {
         console.log(err);
-        res.status(500).json(err);
-        
-        
+        res.status(500).json(err); 
     });
 })
-
-
-
-
-
 
 //delete
 router.get('/delete', ( req, res) =>{
     res.send('Delete the response');
 });
 //update
-router.get('/update', ( req, res) =>{
-    res.send('Update the response');
+router.put('/update/:id', ( req, res) =>{
+Model.findByIdAndUpdate(req.params.id,req.body,{new:true})
+.then((result) => {
+    res.status(200).json(result);    
+}).catch((err) => {
+    console.log(err);
+    if(err.code=== 11000){
+        res.status(500).json({messsage: 'Email already exists'});
+    }else{
+        res.status(500).json({messsage: 'Something went wrong'});
+    }
+
+    res.status(500).json(err);
+    
+    
 });
+});
+
+
 // : denotes url parameter 
 router.get('/getbyid/:id', ( req, res) =>{
     console.log(req.params.id);
