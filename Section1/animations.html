@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .my-image {
+            margin: 50px;
+            transition-duration: 0.5s;
+            animation: myanimation 2s linear infinite forwards;
+        }
+
+        .my-image:hover {
+            /* transform: rotate(-30deg); */
+            /* transform: scale(1.2, 1.6); */
+            /* transform: skew(-20deg) ; */
+            /* transform: translateY(-50px) ; */
+        }
+
+        @keyframes myanimation {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(50px) rotate(10deg);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <img class="my-image"
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlyqPKdFbQpdhwYSFNLCnYuoxgY-6f7VV7Uw&s" alt="">
+
+</body>
+
+</html>

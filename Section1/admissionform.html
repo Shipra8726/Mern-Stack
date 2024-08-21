@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+</head>
+
+<body>
+
+    <form>
+
+        <label for="name">Student Name</label>
+        <input id="name" type="text" required minlength="3">
+        <br><br>
+
+        <label for="email">Email Address</label>
+        <input id="email" type="email" required>
+        <br><br>
+
+        <label for="">Gender</label>
+        <input type="radio" name="gender"> Male
+        <input type="radio" name="gender"> Female
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input id="dob" type="date">
+        <br><br>
+
+        <label for="">Address</label>
+        <textarea rows="4">
+        </textarea>
+
+        <label for="course">Course</label>
+        <select id="course">
+            <option>Select Course</option>
+            <option>MERN Stack Development</option>
+            <option>Python Data Science</option>
+            <option>React Native</option>
+            <option>Artificial Intelligence</option>
+        </select>
+        <br><br>
+
+        <label for="">College</label>
+        <input type="text" list="college-options">
+        <datalist id="college-options">
+            <option>BBDU</option>
+            <option>RR</option>
+            <option>Sherwood</option>
+            <option>SRMCEM</option>
+            <option>Integral</option>
+        </datalist>
+        <br><br>
+
+        <input id="terms" type="checkbox">
+        <label for="terms">Accept Terms and Conditions</label>
+        <br><br>
+
+
+        <details>
+            <summary>View Terms & Conditions</summary>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam pariatur maxime quis adipisci! Optio,
+                deserunt dolore, <mark> consequuntur reiciendis doloribus </mark> iste atque porro corporis ea veniam
+                harum nam?
+                Ea, adipisci, assumenda accusamus, ut odit similique dolores debitis fugit omnis labore voluptatem in.
+                Quos iure labore assumenda. Minus in repellendus beatae.</p>
+        </details>
+
+        <button type="submit">Submit</button>
+
+    </form>
+</body>
+
+</html>
+
