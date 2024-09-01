@@ -1,6 +1,5 @@
 const express = require('express');
 const Model = require('../models/usermodel');
-const { model } = require('mongoose');
 
 const router = express.Router();
 //add
@@ -16,7 +15,7 @@ router.post('/add', ( req, res) =>{
     });
 });
 //get all
-router.get('/get all', ( req, res) =>{
+router.get('/getall', ( req, res) =>{
      
     Model.find()
     .then((result) => {
