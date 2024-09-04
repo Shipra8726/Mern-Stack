@@ -2,6 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import toast from 'react-hot-toast';
+import Link from 'next/link';
 
 const manageuser = () => {
 
