@@ -54,7 +54,8 @@ const EventHandling = () => {
           <label className='mt-5 block'>Upload Image</label>
           <input type="file" accept='image/*' onChange={previewImage} />
 
-          <input type="text" className='border w-full mt-5' onKeyDown={ (e) => { console.log(e.code);}} />
+          <input type="text" className='border w-full mt-5'
+           onKeyDown={ (e) => { console.log(e.code);}} />
           
 
     </div>

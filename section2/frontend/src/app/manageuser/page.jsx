@@ -1,6 +1,7 @@
 'use client';
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import toast from 'react-hot-toast';
 
 const manageuser = () => {
 
@@ -16,6 +17,18 @@ const manageuser = () => {
       fetchUsersData(); 
     }, []);
 
+    const deleteUser = (id) => {
+      axios.delete('http://localhost:5000/user/delete/'+id)
+      .then((result) => {
+        toast.success('User Deleted Succesfully');
+        fetchUsersData();
+      }).catch((err) => {
+        console.log(err);
+        toast.error('Failed to delete User');
+        
+      });
+    }
+
     const displayUsers = () => {
       if(userList.length === 0){
         return <p>Loading...Please Wait</p>
@@ -27,27 +40,37 @@ const manageuser = () => {
               <th className='p-3 text-lg'>Name</th>
               <th className='p-3 text-lg'>Email</th>
               <th className='p-3 text-lg'>City</th>
+              <th colSpan={2}>Actions</th>
             </tr>
+ 
           </thead>
           <tbody className=''>
             {
               userList.map((user) => { 
-                return <tr key = {user.id} className='border border-blue-300'>
+                return <tr key = {user._id} className='border border-blue-300'>
                   <td className='p-3'>{user._id}</td>
                   <td className='p-3'>{user.name}</td>
                   <td className='p-3'>{user.email}</td>
                   <td className='p-3'>{user.city}</td>
+                <td>
+                <button
+                   onClick={()=>{deleteUser(user._idid)}}
+                 className='px-3 py-1 bg-red-500 rounded-full text-white'>Delete</button>
+                </td>
+                <td>
+                  <Link href={'/updateuser/'+user._id}
+                   className='px-3 py-1 bg-blue-500 rounded-full text-white'>Edit</Link>
+                </td>
                 </tr>
-              })
-              
-            }
-          </tbody>
-        </table>
-      }
+                     }
+                  ) 
+                }
+             </tbody>
+           </table>
+           }
 
     }
     
-
   return (
     <div>
         <div classname='max-w-[80%] mx-auto shadow-lg rounded-lg p-5'>
@@ -59,4 +82,4 @@ const manageuser = () => {
   )
 }
 
-export default manageuser
+export default manageuser;
