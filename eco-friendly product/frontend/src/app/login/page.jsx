@@ -18,8 +18,8 @@ const Login = () => {
                 Forgot Password
               </Link>
               <button className="border bg-green-600 text-white mt-5 px-3 py-2 rounded w-full">Submit</button>
-              <Link href="#" className="block text-base text-gray-500 text-center  ">
-                Create New Account
+              <Link href="/signup" className="block text-base text-gray-500 text-center  ">
+                Don't Have an Account? <span className='text-red-600'>SignUp</span>
               </Link>
             </form>
           </div>

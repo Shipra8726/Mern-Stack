@@ -53,44 +53,75 @@ const Aboutus = () => {
                     <h3 className='font-bold text-center text-pink-500 text-2xl'>Our Eco-Friendly Product</h3>
                 </div>
                 <div className='flex gap-8 items-center justify-center flex-wrap'>
-                    <div className='h-96 w-96 '>
+                    <div className='h-96 w-96  shadow-xl shadow-gray-200'>
                         <img className='h-80 w-full object-cover' src="https://i.pinimg.com/736x/01/ce/f0/01cef069452d3b6aa7a592c95b751321.jpg" alt="" />
                         <h3 className='text-xl mt-3 font-bold text-gray-900'>Gifts</h3>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
-                    <div className='h-96 w-96 '>
+                    <div className='h-96 w-96  shadow-xl shadow-gray-200'>
 
                         <img className='h-80 w-full object-cover' src="https://i.pinimg.com/564x/77/83/9b/77839ba48afe212610fb756cb2b7fee3.jpg" alt="" />
                         <h3 className='text-xl mt-3 font-bold text-gray-900'>Fashion Accessories</h3>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
-                    <div className='h-96 w-96 '>
+                    <div className='h-96 w-96  shadow-xl shadow-gray-200'>
 
                         <img className='h-80 w-full object-cover' src="https://i.pinimg.com/564x/a5/5c/9d/a55c9d29cfa65801d7568e6c4257ebd5.jpg" alt="" />
                         <h3 className='text-xl mt-3 font-bold text-gray-900'>Kitchen</h3>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
-                    <div className='h-80 w-96 '>
+                    <div className='h-80 w-96  shadow-xl shadow-gray-200'>
 
                         <img className='h-80 w-full object-cover' src="https://i.pinimg.com/564x/1c/66/d2/1c66d23c0053c666558d322555d964c4.jpg" alt="" />
                         <h3 className='text-xl mt-3 font-bold text-gray-900'>Bathroom</h3>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
-                    <div className='h-80 w-96 '>
+                    <div className='h-80 w-96  shadow-xl shadow-gray-200'>
 
                         <img className='h-80 w-full object-cover' src="https://i.pinimg.com/564x/f6/bf/28/f6bf28fc5ca59538ad8d7698efa7d840.jpg" alt="" />
                         <h3 className='text-xl mt-3 font-bold text-gray-900'>Organic</h3>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
-                    <div className='h-80 w-96 '>
+                    <div className='h-80 w-96  shadow-xl shadow-gray-200'>
 
                         <img className='h-80 w-full object-cover' src="https://i.pinimg.com/564x/29/c8/b3/29c8b3abab40145c1dfd02f96dcfc805.jpg" alt="" />
                         <h3 className='text-xl mt-3 font-bold text-gray-900'>Home & Garden</h3>
                         <p>Lorem ipsum dolor sit.</p>
                     </div>
                 </div>
-
-
+            </div>
+            <div>
+            <section className="py-16 mt-5">
+        <div className="container mx-auto px-6">
+          <h2 className="text-3xl font-bold text-gray-800 mb-5 text-center">
+            What Our Customers Say
+          </h2>
+          <div className="flex flex-wrap justify-center">
+            <div className="w-full md:w-1/3 p-4">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <p className="text-gray-600 mb-4">
+             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit aliquid adipisci beatae ducimus, eveniet harum.
+                </p>
+                <h4 className="text-xl font-bold">-Mubbasir Sir</h4>
+              </div>
+            </div>
+            <div className="w-full md:w-1/3 p-4">
+              <div className="bg-white p-6 rounded-lg shadow-lg">
+                <p className="text-gray-600 mb-4">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima, facilis itaque temporibus consequatur debitis rem?
+                </p>
+                <h4 className="text-xl font-bold">-WXYZ</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* Footer Section */}
+      <footer className="bg-gray-800 text-white py-3">
+        <div className="container mx-auto text-center">
+          <p>©2024 EcoGoods |Designed with love for the planet.|</p>
+        </div>
+      </footer>
             </div>
         </>
     )
