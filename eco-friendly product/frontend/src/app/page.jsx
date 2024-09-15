@@ -96,31 +96,81 @@ const page = () => {
       </div>
       <div className='flex mt-6 h-[70vh] justify-center gap-3 ml-9 items-center w-[95%] '>
         <div className=' h-[65vh] w-1/3 relative'>
-          <div className='bottom-0  absolute p-4 h-auto w-full'>
-            <h1 className=' text-3xl text-gray-600 dark:text-black font-3xl text-center flex justify-center text-bottom '>Kitchen</h1>
-
+          <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
+            <h1 className=' text-3xl text-gray-600 dark:text-black font-3xl text-center flex justify-center text-bottom font-bold'>Kitchen</h1>
+              <button className='mt-2  inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now 
+              <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                 </button>
           </div>
           <video
             className="h-full object-cover w-full "
             src="/pnvdo.mp4"
             autoPlay
             loop
+            muted
           ></video>
         </div>
-        <div className=' flex h-[65vh] w-1/3 '>
+        <div className=' flex h-[65vh] w-1/3 relative '>
+        <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
+            <h1 className=' text-3xl text-gray-600 dark:text-black font-3xl text-center flex justify-center text-bottom font-bold'>Beauty</h1>
+              <button className=' mt-2 inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now 
+              <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                 </button>
+          </div>
           <video
             className="h-full w-full object-cover"
             src="/pnvdo2.mp4"
             autoPlay
             loop
+            muted
           ></video>
         </div>
-        <div className=' flex h-[65vh] w-1/3 '>
+        <div className=' flex h-[65vh] w-1/3 relative '>
+        <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
+            <h1 className=' text-3xl text-gray-600 dark:text-black font-3xl text-center flex justify-center text-bottom font-bold'>Kitchen&Garden</h1>
+              <button className='mt-2 inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now
+              <svg
+                  className="w-4 h-4 ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                 </button>
+          </div>
           <video
             className="h-full w-full object-cover"
             src="/pnvdo3.mp4"
             autoPlay
             loop
+            muted
           ></video>
         </div>
       </div>
@@ -130,51 +180,59 @@ const page = () => {
           <h1 className='text-gray-500'>New Arrivals</h1>
           <h1 className='text-gray-500'>Sale</h1>
         </div>
-        <div className='flex-wrap flex justify-center h-[100vh] w-[100%] mt-3 p-7'>
+        <div className='flex-wrap flex gap-7 justify-center h-[100vh] w-[100%] mt-3 p-7'>
           <div className='h-1/2 w-[300px]'>
-            <img className='object-cover ' src="https://i.pinimg.com/736x/d4/6c/28/d46c2830df59c46f835f03f8e9b72cf7.jpg" alt="" />
+            <img className='h-full w-full object-cover ' src="https://i.pinimg.com/736x/d4/6c/28/d46c2830df59c46f835f03f8e9b72cf7.jpg" alt="" />
           </div>
-          <div className='h-1/2'>
-            <img className='object-cover' src="https://i.pinimg.com/236x/e1/1c/ad/e11cad5458c19dafac74baeb6fcd054c.jpg" alt="" />
+          <div className='h-1/2 w-[300px]'>
+            <img className='h-full w-full object-cover' src="https://i.pinimg.com/236x/e1/1c/ad/e11cad5458c19dafac74baeb6fcd054c.jpg" alt="" />
           </div>
-          <div className='h-1/2'>
-            <img className='object-cover ' src="https://i.pinimg.com/236x/10/12/8e/10128e74ca91b2e8cc4301554185664c.jpg" alt="" />
+          <div className='h-1/2 w-[300px]'>
+            <img className=' h-full w-full object-cover ' src="https://i.pinimg.com/236x/10/12/8e/10128e74ca91b2e8cc4301554185664c.jpg" alt="" />
           </div>
-          <div className='h-1/2'>
-            <img className='object-cover w-1/3' src="https://i.pinimg.com/236x/e3/3b/06/e33b06d17da9067c37c0469c059ce9af.jpg" alt="" />
+          <div className='h-1/2 w-[300px]'>
+            <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/e3/3b/06/e33b06d17da9067c37c0469c059ce9af.jpg" alt="" />
           </div>
-          <div className='h-1/2'>
-            <img className='object-cover ' src="https://i.pinimg.com/736x/36/0b/cf/360bcfcf28f04dc57d38df549194c33e.jpg" alt="" />
+          <div className='h-1/2 w-[300px]'>
+            <img className='h-full w-full object-cover ' src="https://i.pinimg.com/736x/36/0b/cf/360bcfcf28f04dc57d38df549194c33e.jpg" alt="" />
           </div>
-          <div className='h-1/2'>
-            <img className='object-cover ' src="https://i.pinimg.com/236x/16/d4/20/16d420c487190b87e6904473698f1d9f.jpg" alt="" />
+          <div className='h-1/2 w-[300px]'>
+            <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/16/d4/20/16d420c487190b87e6904473698f1d9f.jpg" alt="" />
+          </div>
+          <div className='h-1/2 w-[300px]'>
+            <img  className='h-full w-full object-cover 'src="https://i.pinimg.com/236x/24/fa/84/24fa84285ddffac95f063fe1030204cd.jpg" alt="" />
+          </div>
+          <div className='h-1/2 w-[300px]'>
+            <img className='h-full w-full object-cover 'src="https://i.pinimg.com/236x/be/47/bf/be47bf13b507f26d8adf4a73fa8722c9.jpg" alt="" />
           </div>
         </div>
 
-        <footer className=" w-full max-w-[85rem] py-5 px-4 sm:px-6 lg:px-8 mx-auto">
 
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 mb-10">
+
+        <footer className=" w-full mt-7 max-w-[85rem] py-8 px-4 sm:px-6 lg:px-8 mx-auto">
+
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-10">
             <div className="col-span-full hidden lg:col-span-1 lg:block">
               <a
-                className="flex-none font-semibold text-xl text-black focus:outline-none focus:opacity-80 dark:text-white"
+                className="flex-none font-semibold text-xl text-black "
                 href="#"
                 aria-label="Brand"
               >
                 Brand
               </a>
-              <p className="mt-3 text-xs sm:text-sm text-gray-600 dark:text-neutral-400">
+              <p className="mt-3 text-base text-gray-600 ">
                 Earthly Goods
               </p>
             </div>
 
             <div>
-              <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
+              <h4 className="text-xl font-semibold text-gray-900 uppercase ">
                 Product
               </h4>
-              <div className="mt-3 grid space-y-3 text-sm">
+              <div className="mt-3 grid space-y-3 text-base">
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Pricing
@@ -182,7 +240,7 @@ const page = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Changelog
@@ -190,7 +248,7 @@ const page = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Docs
@@ -198,7 +256,7 @@ const page = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Download
@@ -208,13 +266,13 @@ const page = () => {
             </div>
 
             <div>
-              <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
+              <h4 className="text-xl font-semibold text-gray-900 uppercase ">
                 Company
               </h4>
-              <div className="mt-3 grid space-y-3 text-sm">
+              <div className="mt-3 grid space-y-3 text-base">
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     About us
@@ -222,58 +280,34 @@ const page = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Blog
                   </a>
                 </p>
+                
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Careers
-                  </a>{" "}
-                  <span className="inline text-blue-600 dark:text-blue-500">
-                    — We're hiring
-                  </span>
-                </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Customers
                   </a>
                 </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Newsroom
-                  </a>
-                </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Sitemap
-                  </a>
-                </p>
+                
+                
               </div>
             </div>
 
             <div>
-              <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
+              <h4 className="text-xl font-semibold text-gray-900 uppercase ">
                 Resources
               </h4>
-              <div className="mt-3 grid space-y-3 text-sm">
+              <div className="mt-3 grid space-y-3 text-base">
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Community
@@ -281,98 +315,22 @@ const page = () => {
                 </p>
                 <p>
                   <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
+                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
                     href="#"
                   >
                     Help &amp; Support
                   </a>
                 </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    eBook
-                  </a>
-                </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    What's New
-                  </a>
-                </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Status
-                  </a>
-                </p>
+                
+                  
               </div>
             </div>
 
-            <div>
-              <h4 className="text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
-                Developers
-              </h4>
-              <div className="mt-3 grid space-y-3 text-sm">
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Api
-                  </a>
-                </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Status
-                  </a>
-                </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    GitHub
-                  </a>{" "}
-                  <span className="inline text-blue-600 dark:text-blue-500">
-                    — New
-                  </span>
-                </p>
-              </div>
-              <h4 className="mt-7 text-xs font-semibold text-gray-900 uppercase dark:text-neutral-100">
-                Industries
-              </h4>
-              <div className="mt-3 grid space-y-3 text-sm">
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Financial Services
-                  </a>
-                </p>
-                <p>
-                  <a
-                    className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800 dark:text-neutral-400 dark:hover:text-neutral-200 dark:focus:text-neutral-200"
-                    href="#"
-                  >
-                    Education
-                  </a>
-                </p>
-              </div>
-            </div>
+           
 
           </div>
 
-          <div className="pt-5 mt-5 border-t border-gray-200 dark:border-neutral-700">
+          <div className="pt-5 mt-5 border-t border-gray-200 ">
             <div className="sm:flex sm:justify-between sm:items-center">
               <div className="flex flex-wrap items-center gap-3">
 
@@ -380,7 +338,7 @@ const page = () => {
                   <button
                     id="hs-footer-language-dropdown"
                     type="button"
-                    className="hs-dropdown-toggle py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 focus:outline-none focus:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+                    className="hs-dropdown-toggle py-2 px-3 inline-flex items-center gap-x-2 text-sm rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50   disabled:opacity-50 disabled:pointer-events-none dark:bg-neutral-900 dark:border-neutral-700 dark:text-white dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
                     aria-haspopup="menu"
                     aria-expanded="false"
                     aria-label="Dropdown"
@@ -493,11 +451,7 @@ const page = () => {
 
             </div>
           </div>
-        </footer>
-
-
-
-
+        </footer> 
 
       </div>
 
