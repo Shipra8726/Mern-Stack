@@ -98,20 +98,20 @@ const page = () => {
         <div className=' h-[65vh] w-1/3 relative'>
           <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
             <h1 className=' text-3xl text-gray-600 dark:text-black font-3xl text-center flex justify-center text-bottom font-bold'>Kitchen</h1>
-              <button className='mt-2  inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now 
+            <button className='mt-2  inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now
               <svg
-                  className="w-4 h-4 ml-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                 </button>
+                className="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
           <video
             className="h-full object-cover w-full "
@@ -122,22 +122,22 @@ const page = () => {
           ></video>
         </div>
         <div className=' flex h-[65vh] w-1/3 relative '>
-        <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
+          <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
             <h1 className=' text-3xl text-gray-600 dark:text-black font-3xl text-center flex justify-center text-bottom font-bold'>Beauty</h1>
-              <button className=' mt-2 inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now 
+            <button className=' mt-2 inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now
               <svg
-                  className="w-4 h-4 ml-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                 </button>
+                className="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
           <video
             className="h-full w-full object-cover"
@@ -148,22 +148,22 @@ const page = () => {
           ></video>
         </div>
         <div className=' flex h-[65vh] w-1/3 relative '>
-        <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
+          <div className='bottom-0 flex flex-col items-center justify-center   absolute p-4 h-auto w-full'>
             <h1 className=' text-3xl text-gray-600 dark:text-black font-3xl text-center flex justify-center text-bottom font-bold'>Kitchen&Garden</h1>
-              <button className='mt-2 inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now
+            <button className='mt-2 inline-flex items-center justify-center text-center bg-white w-32 rounded-3xl py-1 shadow-xl'>Shop Now
               <svg
-                  className="w-4 h-4 ml-1"
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-                 </button>
+                className="w-4 h-4 ml-1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </button>
           </div>
           <video
             className="h-full w-full object-cover"
@@ -200,10 +200,10 @@ const page = () => {
             <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/16/d4/20/16d420c487190b87e6904473698f1d9f.jpg" alt="" />
           </div>
           <div className='h-1/2 w-[300px]'>
-            <img  className='h-full w-full object-cover 'src="https://i.pinimg.com/236x/24/fa/84/24fa84285ddffac95f063fe1030204cd.jpg" alt="" />
+            <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/24/fa/84/24fa84285ddffac95f063fe1030204cd.jpg" alt="" />
           </div>
           <div className='h-1/2 w-[300px]'>
-            <img className='h-full w-full object-cover 'src="https://i.pinimg.com/236x/be/47/bf/be47bf13b507f26d8adf4a73fa8722c9.jpg" alt="" />
+            <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/be/47/bf/be47bf13b507f26d8adf4a73fa8722c9.jpg" alt="" />
           </div>
         </div>
 
@@ -286,7 +286,7 @@ const page = () => {
                     Blog
                   </a>
                 </p>
-                
+
                 <p>
                   <a
                     className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
@@ -295,8 +295,8 @@ const page = () => {
                     Customers
                   </a>
                 </p>
-                
-                
+
+
               </div>
             </div>
 
@@ -321,12 +321,12 @@ const page = () => {
                     Help &amp; Support
                   </a>
                 </p>
-                
-                  
+
+
               </div>
             </div>
 
-           
+
 
           </div>
 
@@ -451,7 +451,7 @@ const page = () => {
 
             </div>
           </div>
-        </footer> 
+        </footer>
 
       </div>
 

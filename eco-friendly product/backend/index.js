@@ -1,6 +1,7 @@
 //importing express
 const express = require('express');
-const UserRouter = require('./routers/userRouter');
+const UserRouter = require('./routers/productrouters');
+const ProductRouter = require('./routers/productrouter');
 const cors = require('cors');
 //initializing express
 const app = express();
@@ -11,7 +12,7 @@ app.use(cors({
     origin: 'http://localhost:3000'
 }));
 app.use(express.json())
-app.use('/user', UserRouter);
+app.use('/user', productrouter);
 
 //route or endpoint
 app.get('/', (req, res) => {

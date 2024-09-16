@@ -3,8 +3,8 @@ import React from 'react'
 const Aboutus = () => {
     return (
         <>
-            <div className='flex flex-col justify-center items-center m-8 ' >
-                <h1 className='font-bold text-color-black text-center p-3 text-4xl'>About Us</h1>
+            <div className='flex flex-col justify-center items-center  ' >
+                <h1 className='font-bold text-color-black text-center text-4xl'>About Us</h1>
                 <p className='text-center w-[90%] text-lg text-gray-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Vitae quae quaerat provident earum. Tempore dolorem cumque molestiae perspiciatis accusantium sapiente praesentium, natus facere placeat?
                     Quas dolore error facilis ut laborum incidunt, in harum eligendi molestiae.</p>

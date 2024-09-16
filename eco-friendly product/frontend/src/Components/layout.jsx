@@ -6,18 +6,14 @@ const Navbar = () => {
     <div>
       <>
 
-        <header className="sticky top-4 mt-5 mb-2  flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full before:absolute before:inset-0 before:max-w-[67rem] before:mx-2 before:lg:mx-auto before:rounded-[26px] before:bg-neutral-800/30 before:backdrop-blur-md">
-          <nav className="relative max-w-[66rem] w-full py-2-5 ps-5 pe-2 md:flex md:items-center md:justify-between md:py-0 mx-2 lg:mx-auto">
-            <div className="flex items-center justify-between">
+        <header className="  mb-2 flex flex-wrap md:justify-start ">
+          <nav className="  w-full  ps-5  md:flex md:items-center md:justify-between  mx-2  z-50 w-full ">
+            <div className="flex  items-center text-black justify-between">
 
-              <Link
-                className="flex-none rounded-md text-xl inline-block font-semibold focus:outline-none focus:opacity-80"
-                href="../templates/agency/index.html"
-                aria-label="Earthly Goods"
-              >
-                <h1 className="w-50 h-auto font-bold text-black">Earthly Goods</h1>
-              </Link>
-
+              <div className='h-20 flex w-52 '>
+                <img className=" w-20" src="https://i.pinimg.com/236x/d0/1d/cc/d01dcc7f720e4810ebf49229daf1c33c.jpg" alt="" />
+                <h1 className="rounded-md text-xl text-center mt-7 font-semibold ">Earthly Goods</h1>
+              </div>
               <div className="md:hidden">
                 <button
                   type="button"
@@ -70,40 +66,41 @@ const Navbar = () => {
             >
               <div className="flex flex-col md:flex-row md:items-center md:justify-end py-2 md:py-0 md:ps-7">
                 <Link
-                  className="p-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-none focus:text-neutral-300"
+                  className="p-3 ps-px sm:px-3 md:py-4 text-base text-black"
                   href="/"
                   aria-current="page"
                 >
                   Home
                 </Link>
                 <Link
-                  className="p-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-none focus:text-neutral-300"
+                  className="p-3 ps-px sm:px-3 md:py-4 text-base text-black"
                   href="/aboutus"
                 >
                   About Us
                 </Link>
                 <Link
-                  className="p-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-none focus:text-neutral-300"
-                  href="/services"
+                  className="p-3 ps-px sm:px-3 md:py-4 text-base text-black"
+                  href="/addproduct"
                 >
-                  Services
+                  Add Product
                 </Link>
-                <Link
-                  className="p-3 ps-px sm:px-3 md:py-4 text-sm text-white hover:text-neutral-300 focus:outline-none focus:text-neutral-300"
-                  href="/login"
-                >
-                  Login
-                </Link>
-                
-                
-                <div>
+     
                   <Link
-                    className="group inline-flex items-center gap-x-2 py-2 px-3 bg-[#ff0] font-medium text-sm text-neutral-800 rounded-full focus:outline-none"
+                    className="group inline-flex items-center gap-x-2 py-2 px-3 text-base "
                     href="/contact"
                   >
                     Contact us
                   </Link>
+                
+                <div className='px-2'>
+                  <Link
+                    className="group inline-flex items-center gap-x-2 py-2 px-6 bg-[#ff0] font-medium text-base rounded-3xl"
+                    href="/login"
+                  >
+                    Login 
+                  </Link>
                 </div>
+                
               </div>
             </div>
 
