@@ -76,8 +76,6 @@ const AddProduct = () => {
               <label>Price</label>
               <input className="border rounded w-full px-3 py-2 mb-4 font-bold "
                id="price" />
-                 onChange={productForm.handleChange}
-                 value={productForm.values.price}
               <label></label>
               <input className="border rounded w-full px-3 py-2 mb-2 font-bold " id="image" type="file" />
               <button type='submit' className="border bg-green-600 text-white  px-3 py-2 rounded w-full">Add Product</button>
