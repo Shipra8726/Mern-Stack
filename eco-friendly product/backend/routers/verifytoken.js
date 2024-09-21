@@ -1,3 +1,5 @@
+const jwt = require('jsonwebtoken');
+
 const verifyToken = (req, res, next) => {
     const token = req.headers['x-auth-token'];
     jwt.verify(token,
@@ -11,7 +13,7 @@ const verifyToken = (req, res, next) => {
                 next();
             }
         }
-  )  
+    )
 }
 
-module.exports=verifyToken;
+module.exports = verifyToken;

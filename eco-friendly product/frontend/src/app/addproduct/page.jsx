@@ -11,13 +11,18 @@ const AddProduct = () => {
       title: '',
       brand: '',
       category: '',
-      quantity: '',
       price: '',
       image: ''
     },
     onSubmit: (values) => {
       console.log(values);
-
+      axios.post('http://localhost:5000/product/add', values)
+        .then((result) => {
+          toast.success('Product Added')
+        }).catch((err) => {
+          console.log(err);
+          toast.error('error occured');
+        });
     }
   })
 
@@ -32,13 +37,14 @@ const AddProduct = () => {
     axios.post('https://api.cloudinary.com/v1_1/drqxuctyt/image/upload', formData, {
       headers: { 'Content-Type': 'multipart/form-data' }
     })
-      .then((result) => {
-        console.log(result.data);
-        toast.success('File Uploaded Successfully');
-      }).catch((err) => {
-        console.log(err);
-        toast.error('Failed to Upload File');
-      });
+    .then((result) => {
+      console.log(result.data);
+      productForm.setFieldValue('image', result.data.url);
+      toast.success('File Uploaded Successfully');
+    }).catch((err) => {
+      console.log(err);
+      toast.error('Failed to Upload File');
+    });
   }
 
   return (
@@ -57,27 +63,23 @@ const AddProduct = () => {
                 type="text" />
               <label>Brand</label>
               <input className="border rounded w-full px-3 py-2 mb-4 font-bold "
-               id="Brand"
-               onChange={productForm.handleChange}
-               value={productForm.values.brand}
-               type="text" />
+                id="brand"
+                onChange={productForm.handleChange}
+                value={productForm.values.brand}
+                type="text" />
               <label>Category</label>
-              <input className="border rounded w-full px-3 py-2 mb-4 font-bold " 
-              id="Category" 
-              onChange={productForm.handleChange}
-              value={productForm.values.category}
-              type="text" />
-              <label>Quantity</label>
               <input className="border rounded w-full px-3 py-2 mb-4 font-bold "
-               id="Quantity" 
-               onChange={productForm.handleChange}
-               value={productForm.values.quantity}
-               type="text" />
+                id="category"
+                onChange={productForm.handleChange}
+                value={productForm.values.category}
+                type="text" />
+          
               <label>Price</label>
               <input className="border rounded w-full px-3 py-2 mb-4 font-bold "
-               id="price" />
+                id="price" onChange={productForm.handleChange}
+                value={productForm.values.price} />
               <label></label>
-              <input className="border rounded w-full px-3 py-2 mb-2 font-bold " id="image" type="file" />
+              <input className="border rounded w-full px-3 py-2 mb-2 font-bold " onChange={handleUpload} type="file" />
               <button type='submit' className="border bg-green-600 text-white  px-3 py-2 rounded w-full">Add Product</button>
             </form>
           </div>

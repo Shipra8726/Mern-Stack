@@ -1,6 +1,5 @@
- const express = require('express');
+const express = require('express');
 const Model = require('../models/userModels');
-const { model } = require('mongoose');
 
 const jwt = require('jsonwebtoken');
 const verifyToken = require('./verifytoken');
@@ -25,7 +24,7 @@ router.post('/add', (req, res) => {
 
 });
 
-router.get('/getall', verifyToken, (req, res) => {
+router.get('/getall', (req, res) => {
 
     Model.find()
         .then((result) => {
@@ -36,6 +35,7 @@ router.get('/getall', verifyToken, (req, res) => {
         });
 
 });
+
 
 router.get('/getbyemail/:email', (req, res) => {
     Model.findOne({ email: req.params.email })

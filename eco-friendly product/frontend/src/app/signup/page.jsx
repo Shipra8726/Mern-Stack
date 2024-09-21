@@ -23,7 +23,7 @@ const Login = () => {
               </Link>
               <button className="border bg-green-600 text-white mt-5 px-3 py-2 rounded w-full">Submit</button>
               <Link href="#" className="block text-base text-gray-500 text-center  ">
-            Already have an account? <span className='text-red-400' >Login</span>
+                Already have an account? <span className='text-red-400' >Login</span>
               </Link>
             </form>
           </div>
