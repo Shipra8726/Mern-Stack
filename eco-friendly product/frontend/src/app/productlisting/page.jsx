@@ -61,7 +61,7 @@ const ShoppingCart = () => {
     >
       <div className='h-[50vh] w-full flex justify-center items-center'>
         <div className='h-full w-1/2 flex flex-col justify-center items-center'>
-          <h1 className='text-5xl text-white font-bold ' >Lorem ipsum dolor sit amet.</h1>
+          <h1 className='text-5xl text-white font-bold ' >key eco-friendly features.</h1>
           <p className='text-xl text-gray-100 mt-5 mb-5 text-center'>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
             Molestias quidem quaerat tenetur ipsam! Temporibus, maxime. Lorem ipsum dolor sit,
             amet consectetur adipisicing elit. </p>

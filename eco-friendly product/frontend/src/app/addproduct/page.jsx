@@ -85,6 +85,7 @@ const AddProduct = () => {
           </div>
         </div>
       </div>
+      
     </>
   )
 }

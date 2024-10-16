@@ -4,7 +4,6 @@ const mySchema = new Schema({
     title : String,
     brand : { type : String },
     category:{type: String, default : 'unknown'},
-    quantity : { type : String },
     price : { type : Number, require : true},
     image: String,
 

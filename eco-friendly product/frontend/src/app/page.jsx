@@ -29,15 +29,13 @@ const page = () => {
             <div className="max-w-2xl text-center mx-auto">
               <div className="mt-5 max-w-2xl">
                 <h1 className="block font-semibold text-gray-800 text-4xl md:text-5xl lg:text-6xl dark:text-neutral-200">
-                  Lorem ipsum dolor sit amet consectetur.
+                Discover Sustainable Products for a Greener Tomorrow.
                 </h1>
               </div>
 
               <div className="mt-5 max-w-3xl">
                 <p className="text-lg text-gray-600 dark:text-gray-100">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Exercitationem voluptas itaque laborum numquam, officia delectus alias repellendus reiciendis adipisci.
-                  Facilis saepe reprehenderit atque, commodi iste sed libero quod assumenda enim.
+                Shop eco-friendly, ethically sourced, and sustainable products from trusted brands committed to the planet.
                 </p>
               </div>
               <div className="mt-8 gap-3 flex justify-center">
@@ -62,7 +60,7 @@ const page = () => {
       <div className='flex w-[95%] items-center justify-center flex-col'>
         <div className='h-28  text-center mt-8'>
           <h1 className='text-3xl font-bold'>Our Best For you</h1>
-          <p className='mt-2'>Lorem ipsum dolor sit amet.</p>
+          <p className='mt-2'>Green Living, Simplified Shopping.</p>
         </div>
         <div className='w-full'>
 
@@ -177,39 +175,39 @@ const page = () => {
       <div className='w-[100%]'>
         <div className='flex font-bold text-xl justify-center mt-4 items-center gap-10' >
           <h1>Best Sellers </h1>
-          <h1 className='text-gray-500'>New Arrivals</h1>
+          <Link href='/productlisting' className='text-gray-500'>New Arrivals</Link>
           <h1 className='text-gray-500'>Sale</h1>
         </div>
         <div className='flex-wrap flex gap-7 justify-center h-[100vh] w-[100%] mt-3 p-7'>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black '>
             <img className='h-full w-full object-cover ' src="https://i.pinimg.com/736x/d4/6c/28/d46c2830df59c46f835f03f8e9b72cf7.jpg" alt="" />
           </div>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black'>
             <img className='h-full w-full object-cover' src="https://i.pinimg.com/236x/e1/1c/ad/e11cad5458c19dafac74baeb6fcd054c.jpg" alt="" />
           </div>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black'>
             <img className=' h-full w-full object-cover ' src="https://i.pinimg.com/236x/10/12/8e/10128e74ca91b2e8cc4301554185664c.jpg" alt="" />
           </div>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black'>
             <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/e3/3b/06/e33b06d17da9067c37c0469c059ce9af.jpg" alt="" />
           </div>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black'>
             <img className='h-full w-full object-cover ' src="https://i.pinimg.com/736x/36/0b/cf/360bcfcf28f04dc57d38df549194c33e.jpg" alt="" />
           </div>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black'>
             <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/16/d4/20/16d420c487190b87e6904473698f1d9f.jpg" alt="" />
           </div>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black'>
             <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/24/fa/84/24fa84285ddffac95f063fe1030204cd.jpg" alt="" />
           </div>
-          <div className='h-1/2 w-[300px]'>
+          <div className='h-1/2 w-[300px] hover:shadow-xl hover:border-2 hover:rounded-lg hover:border-black'>
             <img className='h-full w-full object-cover ' src="https://i.pinimg.com/236x/be/47/bf/be47bf13b507f26d8adf4a73fa8722c9.jpg" alt="" />
           </div>
         </div>
 
 
 
-        <footer className=" w-full mt-7 max-w-[85rem] py-8 px-4 sm:px-6 lg:px-8 mx-auto">
+        <footer className=" w-full mt-7 max-w-[85rem] border-t border-gray-500  py-8 px-4 sm:px-6 lg:px-8 mx-auto">
 
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-6 mb-10">
             <div className="col-span-full hidden lg:col-span-1 lg:block">
@@ -273,7 +271,7 @@ const page = () => {
                 <p>
                   <a
                     className="inline-flex gap-x-2 text-gray-600 hover:text-gray-800 "
-                    href="#"
+                    href="/aboutus"
                   >
                     About us
                   </a>
@@ -330,7 +328,7 @@ const page = () => {
 
           </div>
 
-          <div className="pt-5 mt-5 border-t border-gray-200 ">
+          <div className="pt-5 mt-5 border-t border-gray-500 ">
             <div className="sm:flex sm:justify-between sm:items-center">
               <div className="flex flex-wrap items-center gap-3">
 
